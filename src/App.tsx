@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import logo from './logo.svg'
+import { TitleClassComponent } from './ContentClassComponent/ContentClassComponent';
+import { ContentClassComponent } from './TitleClassComponent/TitleClassComponent';
 import './App.css'
 
 function App() {
@@ -38,6 +40,8 @@ function App() {
           </a>
         </p>
       </header>
+      <TitleClassComponent name='Title' />
+      <ContentClassComponent content='Content' />
     </div>
   )
 }
