@@ -1,4 +1,8 @@
+import { useParams } from "react-router-dom";
+
 export const Example = () => {
+    const { id } = useParams();
+    console.log({ id })
     const numbers = [1, 2, 3, 4, 5];
     const users = [
         {
