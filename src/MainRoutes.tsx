@@ -3,11 +3,10 @@ import { Counter } from "./Counter";
 import { Example } from "./Example";
 
 export const ExampleRouter = () => {
+
   return (
     <BrowserRouter>
       <Routes>
-        <Route path={'/forbidden'} element={<Navigate to={'/counter'}></Navigate>}>
-        </Route>
         <Route path="/counter" element={<Counter></Counter>} >
         </Route>
         <Route path="/example/:id" element={<Example></Example>}>
